@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Info</title>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="gravityField.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				background-color: #152850;
+				background-size: cover;
+				background-repeat: no-repeat;
+
+			}
+			header{
+				text-align: center;
+				color: white;
+			}
+			article{
+				text-align: center;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<br>
+		<header>
+			<h1>Kreator Ukladow Planetarnych</h1>
+		</header>
+		<article>
+			<p1>Symulacja oddzialywania grawitacyjnego pomiedzy obiektami poprzez wykorzystanie prawa powszechnego ciazenia .</p1>
+			<img src='./Info images/sample.jpg' alt='sample' height='auto' width='auto'>
+			<br>
+			<p2>Symulacja prezentowana jest graficznie wykorzystujac element canvas odswierzany z okreslona czestotliwoscia (milisekundy), czestotliwosc
+			odswierzania moze byc zmieniona w opcjach .</p2>
+			<br>
+			<p3>W celu stworzenia nowego ukladu nalezy z menu glownego nalezy wybrac <br> <b>"Create new system"</b> <br> po jego wyborze wyswietlone zostanie okno kreaowania ukladu, dodawanie obiektow oraz wyswietlanie ich informacji dobywa sie poprzez poszegolne przyciski z menu nawigacyjnych .<br></p3>
+			<br>
+			<img src='./Info images/creator.jpg' alt='sample' height='auto' width='auto'>
+			<br>
+			<br>
+			<p4>Wszystkie menu wykorzystuja funcje "getElementByID", "innerHTML", kazdy z przyciskow korzysta z funkcji on..() oraz operacji na wlasnosciach styli, kazdy przycisk wykorzystuje rowniez element "audio", dzwieki najechania  oraz wcisniecie przycisku, w przypadku braku dzwieku, to znaczy, przyciski nie odgrywaja elementow audio, trzeba odznaczyc opcje "Block audio auto play" w przegladarce .</p4>
+			<br>
+			<p5>Tworzenie obiektu obywa sie po wybraniu uzupelnieniu jego danych oraz wybraniu przycisku <br><b>"Place"</b></p5>
+			<br>
+			<img src='./Info images/addingPlanet.jpg' alt='sample' height='auto' width='auto'>
+			<br>
+			<p6>Jesli tworzonym obiektem jest gwiazda, zostanie dodana automatycznie w wybranym miejscu na plotnie, w innym przypadku, po wybraniu poczatkowej lokacji obiektu, uruchomi sie wybor kierunku oraz predkisci poczatkowej, wyswietlajac przewidzany tor lotu obiektu, kolejne wscisnieci przysicku myszy zatwierdza lot obiektu<br> Przewidywanie toru lotu obiektu odbywa sie w odrebnym watku za wykorzystaniem technologi "Web Workers" . </p6>
+			<br>
+			<img src='./Info images/utworzone.jpg' alt='sample' height='auto' width='auto'>
+			<br>
+			<br>
+			<p7>Szczegolowe informacje o kazdym z obiektow oraz opcje usuniecia obiektu mozna wyswietlic podwojcie klikajac na obiekt na plotnie lub wybierajac go z prawego menu wyswietlajacego wszyskie utworzone obiekty . </p7>
+			<br>
+			<br>
+			<img src='./Info images/objectInfo.jpg' alt='sample' height='auto' width='auto'>
+			<br>
+			<br>
+			<p8>Informacje o wybranym obiekcie wyswietlane sa na zywo w formie tekstowej w momencie najechania myszka na obiekt .</p8>
+			<br>
+			<br>
+			<img src='./Info images/liveInfo.jpg' alt='sample' height='auto' width='auto'>
+			<br>
+			<br>
+			<p9>W przypadku kolizji obiekt z mniejsza masa jest niszczony .</p9>
+			<br>
+			<br>
+			<img src='./Info images/collision.jpg' alt='sample' height='auto' width='auto'>
+			<br>
+			<br>
+			<p10>W raz ze wzrostem masy obiektu zwieksza sie jego promien, w przypadku gwiazd, ich kolory zmieniaja sie bazujac na podstawie spektralnych klasach gwiazd .</p10>
+			<br>
+			<br>
+			<img src='./Info images/starTypes.jpg' alt='sample' height='auto' width='auto'>
+			<br>
+			<br>
+			<p11>Przy tworzeniu planety mozna wybrac jeden z 7 typow, w tym typ z piercieniem </p11>
+			<p12>Otwieranie oraz zamykanie menu odbywa sie za pomoca wlasnosci styli "style.display . <br> Strony walidują sie poprawnie na stronie W3C zgodnie z standardem HTML5 i CSS na przegladarce Firefox 71.0 (64 bity) .</p12>
+
+
+
+		</article>
+		<br>
+		<br>	
+		<br>	
+		<br>	
+		<div class="settings" style="text-align: center;">
+	    	<a type="button" href="./index.html" class="btn" style="text-decoration: none; width: 100px; height: 30px; bottom:0;">Go Back</a>
+		</div>
+	</body>
+</html>
