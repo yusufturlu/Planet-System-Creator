@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>Solar system simulation</title>
+		<meta charset="UTF-8">
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="gravityField.css">
+	</head>
+
+	<div class="topnav" id="topMenu">
+  		<a class="active" href="index.html" onmouseover="mouseOverSound()">Home</a>
+  		<a href="#news"  onclick="openNav()" onmouseover="mouseOverSound()" >Add Object</a>
+  		<a href="#showAllObjects" onclick="openObjectsInfo()" onmouseover="mouseOverSound()" id="timeElapse">Show Objects</a>
+  		<a href="#savesystem"  onmouseover="mouseOverSound()" id="timeElapse">Save System</a>
+	</div>
+
+	<div id="leftMenu" class="sidenav left">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" onmouseover="mouseOverSound()">&times;</a>
+  		<a href="#" onclick="openForm('Star')" onmouseover="mouseOverSound()" id="Star">Star</a>
+  		<a href="#" onclick="openForm('Planet')" onmouseover="mouseOverSound()" id="Planet">Planet</a>
+  		<a href="#" onclick="openForm('Moon')" onmouseover="mouseOverSound()" id="Moon">Moon</a>
+  		<a href="#" onclick="openForm('Asteroid')" onmouseover="mouseOverSound()" id="Asteroid">Asteroid</a>
+
+	</div>
+
+	<div class="form-popup" id="StarFormDiv">
+	  <form class="form-container" id="StarForm">
+	  	<label for="name"><b>Name</b></label>
+	    <br>
+	    <input type="text" id="nameIn" placeholder="Enter Name" name="name" value="None" required>
+	    <br>
+	    <input type="number" id="massIn" placeholder="Enter Mass" value="1" name="mass" step="0.1" min="0.1" max="100" required> *
+	    Sun Mass
+	    <br>
+	    <br>
+	    <button type="button" class="btn" onmouseover="mouseOverSound()" onclick="addBody('Star')">Place </button>
+	  </form>
+	</div>
+
+	<div class="form-popup" id="PlanetFormDiv">
+	  <form class="form-container" id="PlanetForm">
+
+
+	    <label for="name"><b>Name</b></label>
+	    <br>
+	    <input type="text" id="nameIn" placeholder="Enter Name" name="name"  value="None" required>
+	    <br>
+		<label for="name"><b>Mass [kg]</b></label>
+		<br>
+	    <input type="number" id="massIn" placeholder="Enter Mass" value="1" name="mass" step="0.1" min="0.1" max="100.0" required> * Earth Mass 
+	    <br>
+	  	<label for="type"><b>Type</b></label>
+	    <br>
+	    <select name="enviroment" value="objectEnviroment">
+  			<option value="Habitant">Habitant</option>
+  			<option value="Rocky">Rocky</option>
+  			<option value="Gaseous">Gaseous</option>
+  			<option value="Ring Planet">Ring Planet</option>
+  			<option value="Lava Planet">Lava Planet</option>
+  			<option value="Ice Planet">Ice Planet</option>
+  			<option value="Desert Planet">Desert Planet</option>
+		</select> 
+		<br>
+		<br>
+	    <button type="button" class="btn" onmouseover="mouseOverSound()" onclick="addBody('Planet')">Place </button>
+	  </form>
+	</div>
+
+	<div class="form-popup" id="MoonFormDiv">
+	  <form class="form-container" id="MoonForm">
+
+	    <label for="name"><b>Name</b></label>
+	    <br>
+	    <input type="text" id="nameIn" placeholder="Enter Name" name="name"  value="None" required>
+	    <br>
+		<label for="name"><b>Mass [kg]</b></label>
+		<br>
+	    <input type="number" id="massIn" placeholder="Enter Mass" value="1" name="mass" step="0.1" min="0.1" max="100.0" required> * Earth Moon 
+	    <br>
+		<br>
+	    <button type="button" class="btn" onmouseover="mouseOverSound()" onclick="addBody('Moon')">Place </button>
+	  </form>
+	</div>
+
+	<div class="form-popup" id="AsteroidFormDiv">
+	  <form class="form-container" id="AsteroidForm">
+
+	    <label for="name"><b>Name</b></label>
+	    <br>
+	    <input type="text" id="nameIn" placeholder="Enter Name" name="name"  value="None" required>
+	    <br>
+		<label for="name"><b>Mass [kg]</b></label>
+		<br>
+	    <input type="number" id="massIn" placeholder="Enter Mass" name="mass" step="0.01" min="0.01" max="100.0" value="1" required>
+	    <br>
+	    <br>
+	    <button type="button" class="btn" onmouseover="mouseOverSound()" onclick="addBody('Asteroid')">Place</button>
+	  </form>
+	</div>
+
+	<div id="objectsInfo" class="sidenav right">
+
+	  <button type="button" class="btn " onmouseover="mouseOverSound()" onclick="closeObjectsInfo()">Close</button>
+	  <header class='header'>
+	  	<h1>Objects Created</h1>
+	  </header>
+	  <article id="objectCreated">
+	  </article>
+	</div>
+
+	<div id="objectInfo" class="sidenav right">
+	</div>
+
+	<div id="canvasDiv">
+		<body onload="init();">
+		<canvas id="canvas"></canvas>
+	</div>
+	</body>
+</html>

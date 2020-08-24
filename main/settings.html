@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Settings</title>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="gravityField.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				background-color: #152850;
+				background-size: cover;
+				background-repeat: no-repeat;
+
+			}
+		</style>
+	</head>
+	<body>
+
+	<div class="form-popup settings" id="timeElapseDiv">
+	  <form class="center-form-container" id="timeElapseForm">
+
+		<label for="time"><b>Time Elapse</b></label>
+		<p style="font-size: 10px">Adds miliseconds to refresh period of the simulation</p>
+		<br><br>
+	    <input type="number" id="timeIn" value = 0 name="time" step="0.1" min="-100" max="100" required> 
+
+	    <button type="button" class="btn" onclick="changeTimeElapse()">Change </button>
+	    <br>
+	    <br>
+	    <a type="button" href="./index.html" class="btn" style="text-decoration: none"> Go Back</a>
+	  </form>
+	</div>	
+
+	</body>
+</html>
