@@ -10,8 +10,8 @@
 
 
 ## About The Project
-Project written in JavaScript.</br>
-Implements an application that allowes to create planet systems in 2D canvas as in space plane.
+Created in JavaScript.</br>
+Implements an application that allows to create planet systems in 2D canvas, as in space plane.
 
 ![planet_system_creator](https://github.com/L0GI0/Images/blob/master/Solar_System_Simulator_-_JavaScript__HTML__CSS.gif)<br/>
 [YouTube](https://www.youtube.com/watch?v=gkrNLjemLQY)
@@ -19,10 +19,10 @@ Implements an application that allowes to create planet systems in 2D canvas as 
 * [Web Workers](https://www.sfml-dev.org/)
 
 ## Installation
-Download all source files and use them to host the application.
+Download all source files, and use them to host the application.
 
 ## Usage
-Go to web page that host's the project application <br />
+Go to web page that hosts the project application <br />
 ![Planet System Creator](http://planetsystemcreator.c1.biz/gravityField.html)
 
 
