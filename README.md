@@ -19,7 +19,7 @@ Implements an application that allows to create planet systems in 2D canvas, as 
 * [Web Workers](https://www.sfml-dev.org/)
 
 ## Installation
-Download all source files, and use them to host the application.
+Download all source files and use them to host the application.
 
 ## Usage
 Go to web page that hosts the project application <br />
