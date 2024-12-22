@@ -201,13 +201,13 @@ function showObj(id){
 	  }
 	var bodyInfo = "";
   	if(b.type == "Star")
-		bodyInfo += " <img src='./Objects images/star.jpg' alt='Star' height='100' width='120'>";
+		bodyInfo += " <img src='../objects_images/star.jpg' alt='Star' height='100' width='120'>";
   	if(b.type == "Planet")
-		bodyInfo += " <img src='./Objects images/planet.jpg' alt='Star' height='100' width='120'>";
+		bodyInfo += " <img src='../objects_images/planet.jpg' alt='Star' height='100' width='120'>";
 	if(b.type == "Moon")
-  		bodyInfo += " <img src='./Objects images/moon.jpg' alt='Star' height='100' width='120'>";
+  		bodyInfo += " <img src='../objects_images/moon.jpg' alt='Star' height='100' width='120'>";
   	if(b.type == "Asteroid")
-  		bodyInfo += " <img src='./Objects images/asteroid.jpg' alt='Star' height='100' width='120'>";
+  		bodyInfo += " <img src='../bbjects_images/asteroid.jpg' alt='Star' height='100' width='120'>";
 
 	bodyInfo += "<header> <h1>" + b.type + "</h1></header>";
 	bodyInfo += "<article id='objectCreated'>";
